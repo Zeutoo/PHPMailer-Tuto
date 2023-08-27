@@ -105,6 +105,6 @@ Content: '.$message.' <br>
 
 ## Screenshots
 
-![Result 1](https://github.com/Zeutoo/PHPMailer-Tuto/blob/main/Sent1.PNG?raw=true)
-![Result 2](https://github.com/Zeutoo/PHPMailer-Tuto/blob/main/Sent2.PNG?raw=true)
+![Result 1](https://github.com/Zeutoo/PHPMailer-Tuto/blob/main/rm/Sent1.PNG?raw=true)
+![Result 2](https://github.com/Zeutoo/PHPMailer-Tuto/blob/main/rm/Sent2.PNG?raw=true)
 
