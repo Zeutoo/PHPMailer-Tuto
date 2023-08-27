@@ -7,7 +7,7 @@ How use PHPMailer simply
 ## First
 
 Create a google account, active **Two-step validation**.
-After https://myaccount.google.com/u/2/apppasswords and create one **SELECT AN APP** you put other and name it like you like. After that you go in https://gmail.com with the good account ! **Settings**->**See all settings**->**Transfer and POP/IMAP**->**IMAP access** = **Enable IMAP**
+After https://myaccount.google.com/apppasswords and create one **SELECT AN APP** you put other and name it like you like. After that you go in https://gmail.com with the good account ! **Settings**->**See all settings**->**Transfer and POP/IMAP**->**IMAP access** = **Enable IMAP**
 
 
 ## Second
