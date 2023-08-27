@@ -7,7 +7,7 @@ How use PHPMailer simply
 ## First
 
 Create a google account, active **Two-step validation**.
-After https://myaccount.google.com/apppasswords and create one **SELECT AN APP** you put other and name it like you like. After that you go in https://gmail.com with the good account ! **Settings**->**See all settings**->**Transfer and POP/IMAP**->**IMAP access** = **Enable IMAP**
+After https://myaccount.google.com/u/2/apppasswords and create one **SELECT AN APP** you put other and name it like you like. After that you go in https://gmail.com with the good account ! **Settings**->**See all settings**->**Transfer and POP/IMAP**->**IMAP access** = **Enable IMAP**
 
 
 ## Second
@@ -18,6 +18,33 @@ Clone the PHPMailer in your workspace
   cd c:\\xampp\htdocs\my-sample-workspace
   git clone https://github.com/PHPMailer/PHPMailer.git
 ```
+
+## Basic structure
+```bash
+<?php
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require './PHPMailer/src/Exception.php';
+    require './PHPMailer/src/PHPMailer.php';
+    require './PHPMailer/src/SMTP.php';
+
+    $smail = new PHPMailer(true);
+    $smail->isSMTP();
+    $smail->Host = 'smtp.gmail.com';
+    $smail->SMTPAuth = true;
+    $smail->Username = 'your-set-email-address';
+    $smail->Password = 'your-app-password-(step 1)';
+    $smail->Port = 465;
+    $smail->SMTPSecure = 'ssl';
+    $smail->isHTML(true);
+    $smail->setFrom(an@address.mail, "ADMIN SITE");
+    $smail->addAddress(an@address.mail);
+    $smail->Subject = (Subject of this mail);
+    $smail->Body = (This is the content of the mail);
+    $smail->send();
+```
+
 
 ## Third
 ```bash
