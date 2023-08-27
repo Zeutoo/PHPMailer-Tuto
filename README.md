@@ -38,11 +38,12 @@ Clone the PHPMailer in your workspace
     $smail->Port = 465;
     $smail->SMTPSecure = 'ssl';
     $smail->isHTML(true);
-    $smail->setFrom(an@address.mail, "ADMIN SITE");
-    $smail->addAddress(an@address.mail);
-    $smail->Subject = (Subject of this mail);
-    $smail->Body = (This is the content of the mail);
+    $smail->setFrom("an@address.mail", "ADMIN SITE");
+    $smail->addAddress("an@address.mail");
+    $smail->Subject = ("Subject of this mail");
+    $smail->Body = ("This is the content of the mail");
     $smail->send();
+?>
 ```
 
 
